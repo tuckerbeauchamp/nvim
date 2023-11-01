@@ -22,6 +22,15 @@ return require('packer').startup(function(use)
   -- Comment out line of text
   use("tpope/vim-commentary")
 
+  -- Allow text wrapping based off symbol
+  use("tpope/vim-surround")
+
+  -- Linter
+  use("mfussenegger/nvim-lint")
+
+  -- File Tree
+  use("nvim-tree/nvim-tree.lua")
+
   -- Fuzzy Finder
   use {
       'nvim-telescope/telescope.nvim', tag = '0.1.4',
