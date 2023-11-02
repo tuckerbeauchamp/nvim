@@ -28,9 +28,6 @@ return require('packer').startup(function(use)
   -- Linter
   use("mfussenegger/nvim-lint")
 
-  -- File Tree
-  use("nvim-tree/nvim-tree.lua")
-
   -- Fuzzy Finder
   use {
       'nvim-telescope/telescope.nvim', tag = '0.1.4',
