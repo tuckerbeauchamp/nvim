@@ -21,6 +21,8 @@ vim.keymap.set("n", "Q", "<nop>")
 -- Shortcut for find and replace for current word you are on
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
+-- Create tab
+vim.api.nvim_set_keymap('n', '<Leader>t', ':tabnew<CR>', {noremap = true, silent = true})
 
 
 
