@@ -1,6 +1,8 @@
--- This file can be loaded by calling `lua require('plugins')` from your init.vim
+-- lazy.nvim configuration file
+--
+--
+--
 
--- Only required if you have packer configured as `opt`
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -58,7 +60,7 @@ return require('lazy').setup({
 
   {
       "catppuccin/nvim",
-      as = "catppuccin",
+      name = "catppuccin",
       config = function()
           vim.cmd('colorscheme catppuccin')
       end
@@ -90,6 +92,6 @@ return require('lazy').setup({
   -- Status Line
   {
       'nvim-lualine/lualine.nvim',
-      dependencies = { 'nvim-tree/nvim-web-devicons', opt = true }
+      dependencies = { 'nvim-tree/nvim-web-devicons' }
   },
 })
