@@ -37,7 +37,6 @@ return require('lazy').setup({
         }
     },
 
-    'ThePrimeagen/harpoon',
     -- Git Gutter
     "airblade/vim-gitgutter",
 
